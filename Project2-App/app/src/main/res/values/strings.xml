@@ -119,5 +119,8 @@
         come up with a stronger signal.</string>
     <string name="HTP_RPSNote">It is very important to conceal your move and to surprise your
         opponent if you want to make sure that you will win this game.</string>
+    <string name="HTP_War">Each player turns up a card at the same time and the player with the higher
+        card wins! Flip your phone upside down to turn over the cards.</string>
+    <string name="War_Instructions">Flip your phone down to flip card or press the deal button</string>
 
 </resources>
