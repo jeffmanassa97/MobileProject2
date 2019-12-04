@@ -33,12 +33,13 @@
         app:srcCompat="@drawable/back" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
+        android:id="@+id/instructions"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="430dp"
-        android:text="Flick phone with wrist to flip card"
+        android:text="@string/War_Instructions"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
 
