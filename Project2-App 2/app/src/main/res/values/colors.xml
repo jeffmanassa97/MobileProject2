@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="ArcadeStyleDarkBlue">#2C3142</color>
+    <color name="ArcadeStylePurple">#4B4073</color>
+    <color name="ArcadeStyleBurgandy">#C36044</color>
+
+    <color name="ArcadeStyleOrange">#F0AA1D</color>
+    <color name="ArcadeStyleGreen">#70D44B</color>
+    <color name="ArcadeStyleBlue">#00B2E3</color>
+    <color name="ArcadeStyleTeal">#008080</color>
+    <color name="ArcadeStyleDarkRed">#8B0000</color>
+    <color name="ArcadeStyleOliveDrab">#6B8E23</color>
+
+    <color name="GrayTransp">#B3C0C0C0</color>
+    <color name="ArcadeStyleOrangeTransp">#B3F0AA1D</color>
+    <color name="ArcadeStyleGreenTransp">#B370D44B</color>
+    <color name="ArcadeStyleBlueTransp">#B300B2E3</color>
+    <color name="ArcadeStyleTealTransp">#B3008080</color>
+    <color name="ArcadeStyleDarkRedTransp">#B38B0000</color>
+    <color name="ArcadeStyleOliveDrabTransp">#B36B8E23</color>
+
+    <color name="ArcadeBackground">#55210C</color>
+    <color name="AcradeStyleTransparentBlue">#CC00B2E3</color>
+    <color name="ArcadeStyleRedTransparent">#CC55210C</color>
+
+    <color name="TextGold">#DAA520</color>
+    <color name="White">#FFFFFF</color>
+
+
+</resources>
