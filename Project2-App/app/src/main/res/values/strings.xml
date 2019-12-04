@@ -1,3 +1,123 @@
 <resources>
-    <string name="app_name">MobileProject2</string>
+    <string name="app_name">Ultimate Mini Game</string>
+
+    <string name="Welcome">Welcome to</string>
+    <string name="UltimateMiniGame">Ultimate Mini Game!</string>
+
+    <string name="Select">Select a game!</string>
+
+    <string name="War">War</string>
+    <string name="ERS">Egyptian Rat Slap</string>
+    <string name="Yahtzee">Yahtzee</string>
+    <string name="Spoons">Spoons</string>
+    <string name="RPS">Rock-Paper-Scissors</string>
+
+    <string name="CurrentTopScore">Current Top Score: </string>
+
+    <string name="PlayWar">Play War</string>
+    <string name="PlayYahtzee">Play Yahtzee</string>
+    <string name="PlayERS">Play Egyptian Rat Slap</string>
+    <string name="PlayRPS">Play Rock Paper Scissors</string>
+    <string name="PlaySpoons">Play Spoons</string>
+
+    <string name="HowWar">How to play War</string>
+    <string name="HowYahtzee">How to play Yahtzee</string>
+    <string name="HowERS">How to play ERS</string>
+    <string name="HowRPS">How to play Rock Paper Scissor</string>
+    <string name="HowSpoons">How to play Spoons</string>
+
+
+    <string name="HowToPlayERS_ThePack">THE PACK:</string>
+    <string name="HowToPlayERS_ThePackDescript">A standard 52-card deck is used and can include Jokers.</string>
+    <string name="HowToPlayERS_Deal">THE DEAL:</string>
+    <string name="HowToPlayERS_DealDescript">Deal cards one at a time face down, to each player
+        until all the cards have been dealt evenly. Without looking at any of the cards, each player
+        squares up their hand into a neat pile in front of them.</string>
+    <string name="HowToPlayERS_Play">THE PLAY:</string>
+    <string name="HowToPlayERS_PlayDescript">Starting to the left of the dealer players pull the top
+        card off their pile and place it face-up in the middle. If the card played is a number card,
+        the next player puts down a card, too. This continues around the table until somebody puts
+        down a face card or an Ace (J, Q, K, or A).When a face card or an ace is played, the next
+        person in the sequence must play another face card or an ace in order for play to continue.
+        If the next person in the sequence does not play a face card or an ace within their allotted
+        chance,the person who played the last face card or an ace wins the round and the whole pile
+        goes to them. The winner begins the next round of play. The only thing that overrides the
+        face card or an ace rule is the slap rule. The first person to slap the pile of cards when
+        the slap rule is put into effect is the winner of that round. If it cannot be determined who
+        was the first to slap the pile, the person with the most fingers on top wins.</string>
+    <string name="HowToPlayERS_Slap">SLAP RULES:</string>
+    <string name="HowToPlayERS_SlapDescript">Double – When two cards of equivalent value are laid
+        down consecutively. Ex: 5, 5 Sandwich – When two cards of equivalent value are laid down
+        consecutively, but with one card of different value between them. Ex: 5, 7, 5 Top Bottom –
+        When the same card as the first card of the set is laid down. Tens – When two cards played
+        consecutively (or with a letter card in between) add up to 10. For this rule, an ace counts
+        as one. Ex: 3, 7 or A, K, 9 Jokers – When jokers are used in the game, which should be
+        determined before game play begins. Anytime someone lays down a joker, the pile can be
+        slapped. Four in a row – When four cards with values in consistent ascending or descending
+        order is placed. Ex: 5, 6, 7, 8 or Q, K, A, 2 Marriage – When a queen is placed over or
+        under a king. Ex: Q, K or K,Q You must add one or two cards to the bottom of the pile if you
+        slap the pile when it was not slappable. Continue playing even if you have run out of cards.
+        As long as you dont slap at the wrong time, you are still allowed to "slap in" and get
+        cards! Everyone should try to stay in the game until you have a single winner who obtains
+        all the cards</string>
+    <string name="HowToPlayERS_Score">HOW TO KEEP SCORE:</string>
+    <string name="HowToPlayERS_ScoreDescpt">The player, who has all of the cards at the end of the game, wins.</string>
+
+    <string name="HTP_Shapes">What are the shapes of Rock Paper Scissors?</string>
+    <string name="HTP_ShapeRock">Rock</string>
+    <string name="HTP_ShapeRockDesc">The rock is when you place your hand into a form of a simple
+        fist</string>
+    <string name="HTP_ShapePaper">Paper</string>
+    <string name="HTP_ShapePaperDesc">The paper is when you place your hand in an outstretched
+        position.</string>
+    <string name="HTP_ShapeScissors">Scissors</string>
+    <string name="HTP_ShapeScissorsDssc">This is when you hold your fist with your index and middle 
+        finger pointing outwards in a V shape.</string>
+    <string name="HTP_Why">Why is Rock Paper Scissor Played?</string>
+    <string name="HTP_WhyDesc">This game is played by children and adults and is popular all over 
+        the world. Apart from being a game played to pass time, the game is usually played in 
+        situations where something has to be chosen. It is similar in that way to other games like 
+        flipping the coin, throwing dice or drawing straws. There is no room for cheating or for 
+        knowing what the other person is going to do so the results are usually very satisfying with 
+        no room for fighting or error.</string>
+    <string name="HTP_Rules">What are the rules of RPS?</string>
+    <string name="HTP_RulesDesc">Although the game has a lot of complexity to it, the rules to play
+        it are pretty simple. The game is played where players deliver hand signals that will
+        represent the elements of the game; rock, paper and scissors. The outcome of the game is
+        determined by 3 simple rules:
+    Rock wins against scissors
+    Scissors win against paper
+    Paper wins against rock</string>
+    <string name="HTP_HandSignals">The Hand Signals</string>
+    <string name="HTP_HandDesc">In order to ensure fair play, the game signals have been agreed
+        upon to ensure the uniformity of delivery every single time. This ensures that there will
+        be no room for error and these signals have been approved for all types of recreational and
+        professional play. The proper opening move will impact the overall success of the game.
+        This means that special attention should be given to the way you move your hand initially
+        before you attempt to make any signal so that other players are not aware of your intention.
+        When you succeed to do so, you ensure that other players will not be able to make a signal
+        that beats yours, at least not on purpose.</string>
+    <string name="HTP_RockDesc">The rock is internationally recognized by a closed fist where the
+        thumb is not concealed. It is also one of the most popular opening moves and this is why it
+        is considered to be one of the most popular hand signals. Most players will view using the
+        rock as an opening move to be somehow aggressive but would still use it because it is easy.
+        The rock will beat scissors every time but will be beaten by paper.</string>
+    <string name="HTP_PaperDesc">Paper is delivered in the same way as the rock except that in this
+        case all the fingers and the thumb are extended in a way that they all face the same
+        direction. The vertical paper or the handshake is strictly forbidden in tournaments of Rock
+        Paper Scissors because it might resemble the scissors which can lead to unnecessary
+        confusion. Paper is one of the most challenging opening moves because there is no indication
+        of what you intend to do next. As a result, many players will be concerned when you use it
+        as an opening move to your game. Paper will beat rock but will be beaten by scissors in no
+        time.</string>
+    <string name="HTP_ScissorsDesc">Scissors are thrown in the same way as rock where the hand is
+        clenched into a fist but the index and the middle finger are extended to the front in order
+        to make an angle that is of 30 to 45 degrees in a way that would resemble a pair of scissors
+        . The use of horizontal scissors is strictly forbidden in tournaments because they can
+        resemble the shape of paper. Opening with scissors is not a very smart move because your
+        opponent will be able to guess what your signal is going to be easily and so will be able to
+        come up with a stronger signal.</string>
+    <string name="HTP_RPSNote">It is very important to conceal your move and to surprise your
+        opponent if you want to make sure that you will win this game.</string>
+
 </resources>
