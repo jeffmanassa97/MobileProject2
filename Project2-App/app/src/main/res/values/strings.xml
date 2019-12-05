@@ -245,6 +245,7 @@
     <string name="HTPY_ScratchDesc">You can score any roll in any category at any time, even if the
         resulting score is zero. Eg, you can take 2-3-3-4-6 in the 5s category. It will score 0.
         This could be used near the end of a game to lose a poor roll against a difficult-to-get
-        category that you've failed to fill (eg, long straight or yahtzee).</string>
+        category that you have failed to fill (eg, long straight or yahtzee).</string>
+    <string name="War_Instructions">Flip phone face down or tap the deal button to flip the cards.</string>
     
 </resources>
