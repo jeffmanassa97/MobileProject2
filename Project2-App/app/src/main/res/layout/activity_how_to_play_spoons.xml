@@ -1,9 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HowToPlaySpoons">
+    tools:context=".HowToPlaySpoons"
+    android:background="@drawable/spoon_background">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/SpoonsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/Spoons"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/pack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SpoonsLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTP_ThePack"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"
+            />
+
+        <TextView
+            android:id="@+id/packDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pack"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_PackDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/packDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_Object"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/objectDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/object"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_ObjectDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/objectDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTP_TheDeal"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/dealDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deal"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_DealDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dealDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTP_ThePlay"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/playDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/play"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_PlayDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTP_TheScore"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/scoreDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPS_ScoreDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+    </RelativeLayout>
+
+</ScrollView>

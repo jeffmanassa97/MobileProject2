@@ -19,7 +19,6 @@ public class SelectGameActivity extends AppCompatActivity {
         Button htpSpoons = (Button)findViewById(R.id.spoons_info_button);
         Button htpWar = (Button)findViewById(R.id.war_info_button);
         Button htpYahtzee = (Button)findViewById(R.id.button15);
-        Button playWar = (Button)findViewById(R.id.play_war_button);
 
         htpERS.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -53,13 +52,6 @@ public class SelectGameActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 startActivity(new Intent(SelectGameActivity.this, HowToPlayYahtzee.class));
-            }
-        });
-
-        playWar.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                startActivity(new Intent(SelectGameActivity.this, War.class));
             }
         });
     }

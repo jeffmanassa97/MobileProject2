@@ -9,16 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".War"></activity>
-
         <activity android:name=".HowToPlayYahtzee"></activity>
         <activity android:name=".HowToPlayWar" />
         <activity android:name=".HowToPlaySpoons" />
         <activity android:name=".HowToPlayRPS" />
         <activity android:name=".HowToPlayERS" />
         <activity android:name=".SelectGameActivity" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

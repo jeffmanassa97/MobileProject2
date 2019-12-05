@@ -20,20 +20,34 @@
     <string name="PlayRPS">Play Rock Paper Scissors</string>
     <string name="PlaySpoons">Play Spoons</string>
 
+    <!-- ____________________________ -->
+    <!--      HOW TO PLAY LABELS      -->
+    <!-- ____________________________ -->
+
     <string name="HowWar">How to play War</string>
     <string name="HowYahtzee">How to play Yahtzee</string>
     <string name="HowERS">How to play ERS</string>
     <string name="HowRPS">How to play Rock Paper Scissor</string>
     <string name="HowSpoons">How to play Spoons</string>
 
+    <!-- ____________________________ -->
+    <!--   LABELS FOR GAMES W/ CARDS  -->
+    <!-- ____________________________ -->
 
-    <string name="HowToPlayERS_ThePack">THE PACK:</string>
-    <string name="HowToPlayERS_ThePackDescript">A standard 52-card deck is used and can include Jokers.</string>
-    <string name="HowToPlayERS_Deal">THE DEAL:</string>
+    <string name="HTP_ThePack">THE PACK:</string>
+    <string name="HTP_TheDeal">THE DEAL:</string>
+    <string name="HTP_ThePlay">THE PLAY:</string>
+    <string name="HTP_TheScore">HOW TO KEEP SCORE:</string>
+    
+    <!-- __________________________ -->
+    <!-- RULES OF EGYPTIAN RAT SLAP -->
+    <!-- __________________________ -->
+
+    <string name="HowToPlayERS_ThePackDescript">A standard 52-card deck is used and can include
+        Jokers.</string>
     <string name="HowToPlayERS_DealDescript">Deal cards one at a time face down, to each player
         until all the cards have been dealt evenly. Without looking at any of the cards, each player
         squares up their hand into a neat pile in front of them.</string>
-    <string name="HowToPlayERS_Play">THE PLAY:</string>
     <string name="HowToPlayERS_PlayDescript">Starting to the left of the dealer players pull the top
         card off their pile and place it face-up in the middle. If the card played is a number card,
         the next player puts down a card, too. This continues around the table until somebody puts
@@ -60,9 +74,13 @@
         As long as you dont slap at the wrong time, you are still allowed to "slap in" and get
         cards! Everyone should try to stay in the game until you have a single winner who obtains
         all the cards</string>
-    <string name="HowToPlayERS_Score">HOW TO KEEP SCORE:</string>
-    <string name="HowToPlayERS_ScoreDescpt">The player, who has all of the cards at the end of the game, wins.</string>
+    <string name="HowToPlayERS_ScoreDescpt">The player, who has all of the cards at the end of the
+        game, wins.</string>
 
+    <!-- ____________________________ -->
+    <!-- RULES OF ROCK PAPER SCISSORS -->
+    <!-- ____________________________ -->
+    
     <string name="HTP_Shapes">What are the shapes of Rock Paper Scissors?</string>
     <string name="HTP_ShapeRock">Rock</string>
     <string name="HTP_ShapeRockDesc">The rock is when you place your hand into a form of a simple
@@ -119,8 +137,114 @@
         come up with a stronger signal.</string>
     <string name="HTP_RPSNote">It is very important to conceal your move and to surprise your
         opponent if you want to make sure that you will win this game.</string>
-    <string name="HTP_War">Each player turns up a card at the same time and the player with the higher
-        card wins! Flip your phone upside down to turn over the cards.</string>
-    <string name="War_Instructions">Flip your phone down to flip card or press the deal button</string>
 
+    <!-- __________________________ -->
+    <!--        RULES OF WAR        -->
+    <!-- __________________________ -->
+
+    <string name="HTPW_Goal">The goal is to be the first player with all 52 cards</string>
+    <string name="HTPW_DealDesc">The deck is divided evenly, with each player receiving 26 cards,
+        dealt one at a time, face down. Anyone may deal first. Each player places their stack of
+        cards face down, in front of them.</string>
+    <string name="HTPW_PlayDesc">Each player turns up a card at the same time and the player with
+        the higher card takes both cards and puts them, face down, on the bottom of his stack. If
+        the cards are the same rank, it is War. Each player turns up one card face down and one card
+        face up. The player with the higher cards takes both piles (six cards). If the turned-up
+        cards are again the same rank, each player places another card face down and turns another
+        card face up. The player with the higher card takes all 10 cards, and so on.</string>
+    <string name="HTPW_ScoreDesc">The game ends when one player has won all the cards.</string>
+
+    <!-- __________________________ -->
+    <!--     RULES OF SPOONS        -->
+    <!-- __________________________ -->
+
+    <string name="HTPS_PackDesc">A standard deck of 52 cards is used plus a number of spoons using 
+        one fewer spoon than the number of players playing in the game</string>
+    <string name="HTPS_Object">OBJECT OF THE GAME:</string>
+    <string name="HTPS_ObjectDesc">Players take turns trying to collect a four-of-a-kind. Once 
+        someone does, everyone tries to grab a spoon. Without a spoon, you get a letter. If a 
+        player spells “S-P-O-O-N”, they’re out! The last player standing wins!</string>
+    <string name="HTPS_DealDesc">Arrange the spoons in a small circle in the center of the table 
+        and deal four cards to each player.</string>
+    <string name="HTPS_PlayDesc">Each player tries to make four of a kind. The dealer takes a card 
+        off the top of the deck to have five cards in their hand, removes one and passes it face 
+        down to the left. Each player discards to the person on their left. The last player places 
+        their discard into a trash pile. Cards are picked up and passed quickly around the table 
+        until someone gets four of a kind and takes a spoon from the center. Once the player with 
+        four of a kind takes a spoon, anyone can take a spoon. The player left without a spoon gets 
+        a letter. If at any time the draw cards run out, pause to reshuffle the trash pile and keep 
+        going.</string>
+    <string name="HTPS_ScoreDesc">The winner is the last player remaining. Players move closer to 
+        elimination each time they don’t get a spoon and take the next letter in the word S-P-O-O-N. 
+        Spell it and you’re out.</string>
+
+    <!-- __________________________ -->
+    <!--    RULES OF YAHTZEE        -->
+    <!-- __________________________ -->
+    
+    <string name="HTPY_Standard">Standard Play:</string>
+    <string name="HTPY_Objective">Objective of the Game:</string>
+    <string name="HTPY_ObjDesc">The object of Yahtzee is to obtain the highest score from throwing
+        5 dice. The game consists of 13 rounds. In each round, you roll the dice and then score the
+        roll in one of 13 categories. You must score once in each category. The score is determined
+        by a different rule for each category. The game ends once all 13 categories have been scored
+        .</string>
+    <string name="HTPY_Start">Game Start:</string>
+    <string name="HTPY_StartDesc">To start with, roll all the dice. After rolling you can either
+        score the current roll (see below), or re-roll any or all of the dice. You may only roll the
+        dice a total of 3 times. After rolling 3 times you must choose a category to score. You may
+        score the dice at any point in the round, i.e. it doesnt have to be after the 3rd roll.
+        </string>
+    <string name="HTPY_Scoring">Scoring:</string>
+    <string name="HTPY_ScoringDesc">To score your combination of 5 dice, you click one of the 13
+        boxes, or write it on the scorecard (scoresheet). There are two sections to the score table,
+         the Upper Section and the Lower Section. Once a box has been scored, it cannot be scored
+        again for the rest of the game (except the Yahtzee category), so choose wisely.</string>
+    <string name="HTPY_UppperScoring">Upper Section Scoring:</string>
+    <string name="HTPY_UpperDesc">If you score in the upper section of the table, your score is the
+        total of the specified die face. So if you roll: 5 _ 2 _ 5 _ 6 _ 5 and score in the Fives
+        category, your total for the category would be 15, because there are three fives, which are
+        added together. If the One, Three or Four Categories were selected for scoring with this
+        roll, you would score a zero. If placed in the Two or Six category, you would score 2 and 6
+        respectively. Bonus: If the total of Upper scores is 63 or more, add a bonus of 35.
+        Note that 63 is the total of three each of 1s, 2s, 3s, 4s, 5s and 6s. </string>
+    <string name="HTPY_LowerScoring">Lower Section Scoring:</string>
+    <string name="HTPY_LowerDesc">In the lower scores, you score either a set amount, or zero if you
+        dont satisfy the category requirements.</string>
+    <string name="HTPY_3and4Kind">3 and 4 of a kind:</string>
+    <string name="HTPY_3and4Desc"> For 3 of a kind you must have at least 3 of the same die faces.
+        You score the total of all the dice. For 4 of a kind you would need 4 die faces the same.
+        </string>
+    <string name="HTPY_Straight">Small and Large Straight:</string>
+    <string name="HTPY_StraightsDesc">A Straight is a sequence of consecutive die faces, where a
+        small straight is 4 consecutive faces, and a large straight 5 consecutive faces. Small
+        straights score 30 and a large 40 points. So if you rolled: 2 - 3 - 2 - 5 - 4 you could
+        score 30 in small straight or 0 in large straight.</string>
+    <string name="HTPY_House">Full House:</string>
+    <string name="HTPY_HouseDesc">A Full House is where you have 3 of a kind and 2 of a kind.
+        Full houses score 25 points. i.e.: 3 - 3 - 2 - 3 - 2 would score 25 in the Full House
+        category.</string>
+    <string name="HTPY_FirstY">First Yahtzee:</string>
+    <string name="HTPY_FirstYDesc">A Yahtzee is 5 of a kind and scores 50 points, although you may
+        elect NOT to score it as a yahtzee, instead choosing to take it as a top row score and
+        safegaurd you bonus.</string>
+    <string name="HTPY_AdditionalY">Additional Yahtzees:</string>
+    <string name="HTPY_AdditionalYDesc">If you roll a second Yahtzee in a game, and you scored your
+        first yahtzee in the Yahtzee box, you would score a further bonus 100 points in the yahtzee
+        box. You must also put this roll into another category, as follows; -If the corresponding
+        Upper section category is not filled then you must score there. ie if you rolled 4 - 4 - 4 -
+        4 - 4 and the Fours Category is not filled, you must put the score in the Fours category.
+        -If the corresponding Upper section category is filled you may then put the score anywhere
+        on the Upper Section (scoring zero). In 3 of a Kind, 4 of a Kind, and Chance categories you
+        would score the total of the die faces. For the Small Straight, Large Straight, and Full
+        House categories, you would score 30, 40 and 25 points respectively.</string>
+    <string name="HTPY_Chance">Chance:</string>
+    <string name="HTPY_ChanceDesc">You can roll anything and be able to put it in the Chance
+        category. You score the total of the die faces.</string>
+    <string name="HTPY_Scratch">Scratch or Dump Scores:</string>
+    <string name="HTPY_ScratchDesc">You can score any roll in any category at any time, even if the
+        resulting score is zero. Eg, you can take 2-3-3-4-6 in the 5s category. It will score 0.
+        This could be used near the end of a game to lose a poor roll against a difficult-to-get
+        category that you've failed to fill (eg, long straight or yahtzee).</string>
+    
 </resources>

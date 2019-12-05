@@ -1,9 +1,341 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HowToPlayYahtzee">
+    tools:context=".HowToPlayYahtzee"
+    android:background="@drawable/dice_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/yahtzeeLabel"
+            android:layout_width="406dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/Yahtzee"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/object"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yahtzeeLabel"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Objective"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/objDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/object"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_ObjDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/objDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Start"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/startDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_StartDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Scoring"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/scoreDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_ScoringDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/upperScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scoreDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_UppperScoring"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/upperDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperScore"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_UpperDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/lowerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_LowerScoring"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/lowerDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lowerScore"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_LowerDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lowerDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_3and4Kind"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/kindDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kind"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_3and4Desc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/straights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kindDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Straight"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/straightsDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/straights"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_StraightsDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/straightsDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_House"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/houseDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/house"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_HouseDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/firstYahtzee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/houseDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_FirstY"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/firstDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstYahtzee"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_FirstYDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/additional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_AdditionalY"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/additionalDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/additional"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_AdditionalYDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/chance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/additionalDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Chance"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/chanceDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chance"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_ChanceDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/scratch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chanceDesc"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_Scratch"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/White"/>
+
+        <TextView
+            android:id="@+id/scratchDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scratch"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/im_fell_great_primer"
+            android:text="@string/HTPY_ScratchDesc"
+            android:textColor="@android:color/black"
+            android:background="@color/White"/>
+    </RelativeLayout>
+
+</ScrollView>
