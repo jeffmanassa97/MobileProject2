@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".War"></activity>
+        <activity android:name=".RockPaperScissors" />
 
         <activity android:name=".HowToPlayYahtzee"></activity>
         <activity android:name=".HowToPlayWar" />
