@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/yahtzeescoresheet">
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="153dp"
+        android:layout_height="88dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="613dp"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/die1"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="514dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/dice1" />
+
+    <ImageButton
+        android:id="@+id/die2"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="437dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dice2" />
+
+    <ImageButton
+        android:id="@+id/die3"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="367dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dice3" />
+
+    <ImageButton
+        android:id="@+id/die4"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="297dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dice4" />
+
+    <ImageButton
+        android:id="@+id/die5"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="212dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/dice5" />
+
+    <Button
+        android:id="@+id/reroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="100dp"
+        android:text="Reroll" />
+
+    <Button
+        android:id="@+id/putInScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="41dp"
+        android:text="Finish Turn" />
+
+    <Spinner
+        android:id="@+id/pickCategory"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="171dp"
+        android:entries="@array/category"/>
+
+    <Button
+        android:id="@+id/crossOutConfirm"
+        android:layout_width="97dp"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="82dp"
+        android:text="Confirm Cross Out" />
+
+</RelativeLayout>

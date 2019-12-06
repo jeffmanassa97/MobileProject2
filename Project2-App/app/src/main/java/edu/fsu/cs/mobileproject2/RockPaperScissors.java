@@ -23,30 +23,31 @@ import static android.hardware.Sensor.TYPE_LIGHT;
 
 public class RockPaperScissors extends AppCompatActivity {
 
+    //Imageview for the RPS choices
     ImageView playerCard;
     ImageView computerCard;
-    ImageView winBanner;
-    ImageView loseBanner;
+    ImageView winBanner; //Banner to be displayed if you win
+    ImageView loseBanner; //Banner for lose
 
-    TextView playerScore;
-    int playerNum;
-    TextView computerScore;
-    int computerNum;
+    TextView playerScore; //Textview for score
+    int playerNum; //Holds the player score
+    TextView computerScore; //Textview for the computer score
+    int computerNum; //Holds computer score
 
     Button rockButton;
     Button paperButton;
     Button scissorsButton;
 
-    SensorManager mSensorManager;
+    SensorManager mSensorManager; //Sensor Manager
     Sensor lightSensor;
-    SensorEventListener lightEventListener;
+    SensorEventListener lightEventListener; //On light change
 
     boolean accelerometerPresent;
     Sensor flipSensor;
-    SensorEventListener flipEventListener;
+    SensorEventListener flipEventListener; //On phone rotation
 
     Sensor shakeSensor;
-    SensorEventListener shakeEventListener;
+    SensorEventListener shakeEventListener; //Looking for significant shake
     float acelVal;  //Current Acceleration value and gravity
     float acelLast; //Last Acceleration value and gravity
     float shake;    //Difference of Acceleration value and gravity
@@ -75,47 +76,50 @@ public class RockPaperScissors extends AppCompatActivity {
         paperButton = findViewById(R.id.paperButton);
         scissorsButton = findViewById(R.id.scissorsButton);
 
-        playerScore.setText("0");
+        playerScore.setText("0"); //Setting scores to 0
         computerScore.setText("0");
 
-        winBanner.setImageResource(android.R.color.transparent);
-        loseBanner.setImageResource(android.R.color.transparent);
+        winBanner.setImageResource(R.drawable.wintrans); //Cannot make visible and invisible
+        loseBanner.setImageResource(R.drawable.losetrans); //Cannot make visible and invisible
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         lightSensor = mSensorManager.getDefaultSensor(TYPE_LIGHT);
         shakeSensor = mSensorManager.getDefaultSensor(TYPE_ACCELEROMETER);
         flipSensor = mSensorManager.getDefaultSensor(TYPE_ACCELEROMETER);
 
+        //If there is no light sensor
         if (lightSensor == null) {
             Toast.makeText(this, "This device does not have a light sensor, please use a device with a light sensor.", Toast.LENGTH_LONG).show();
             finish();
         } else {
-            mSensorManager.registerListener(lightEventListener, lightSensor, 1000000, 1000000);
+            mSensorManager.registerListener(lightEventListener, lightSensor, 1000000000, 100000000);
         }
 
+        //If there is an accelerometer
         List<Sensor> sensorList = mSensorManager.getSensorList(TYPE_ACCELEROMETER);
         if (sensorList.size() > 0) {
             accelerometerPresent = true;
-            mSensorManager.registerListener(flipEventListener, flipSensor, 1000000, 1000000);
-            mSensorManager.registerListener(shakeEventListener, shakeSensor, 1000000, 1000000);
+            mSensorManager.registerListener(flipEventListener, flipSensor, 100000000, 100000000);
+            mSensorManager.registerListener(shakeEventListener, shakeSensor, 100000000, 100000000);
         } else {
             Toast.makeText(this, "This device does not have a accelerometer sensor, please use a device with a accelerometer sensor.", Toast.LENGTH_LONG).show();
             finish();
         }
 
-
+        //Listens for when the phone light sensor is covered
         lightEventListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent sensorEvent) {
                 if (sensorEvent.sensor.getType() == Sensor.TYPE_LIGHT) {
                     if (sensorEvent.values[0] == 0.0) {
-                        //paper
+                        //Paper option
                         if (lockOption == false) {
                             playerOption = 1;
                             computerOption = createRandomNumber();
                             playerCard.setImageResource(R.drawable.paper);
-                            switch(computerOption)
-                            {
+
+                            //Determines scoring
+                            switch (computerOption) {
                                 case 1:
                                     computerCard.setImageResource(R.drawable.paper);
                                     Toast.makeText(getApplicationContext(), "TIE", Toast.LENGTH_LONG).show();
@@ -151,20 +155,22 @@ public class RockPaperScissors extends AppCompatActivity {
                     float y = sensorEvent.values[1];
                     float z = sensorEvent.values[2];
 
+                    //Based on the current acceleration subtract the new acceleration
+                    //If the change is significant then it counts as a shake
                     acelLast = acelVal;
                     acelVal = (float) Math.sqrt((double) (x * x + y * y + z * z));
                     float delta = acelVal - acelLast;
                     shake = shake * 0.9f + delta;
 
                     if (shake > 12) {
-                        //rock
+                        //Rock selection for shaking
                         if (lockOption == false) {
                             playerOption = 2;
                             computerOption = createRandomNumber();
                             playerCard.setImageResource(R.drawable.rock);
 
-                            switch(computerOption)
-                            {
+                            //Determines scoring
+                            switch (computerOption) {
                                 case 1:
                                     computerCard.setImageResource(R.drawable.paper);
                                     computerNum += 1;
@@ -198,14 +204,16 @@ public class RockPaperScissors extends AppCompatActivity {
             public void onSensorChanged(SensorEvent sensorEvent) {
                 if (sensorEvent.sensor.getType() == TYPE_ACCELEROMETER) {
                     if (sensorEvent.values[2] <= 0) {
-                        //scissors
+                        //Looks for the x axis being flipped.
+
+                        //Scissors selection from flipping
                         if (lockOption == false) {
                             playerOption = 3;
                             computerOption = createRandomNumber();
                             playerCard.setImageResource(R.drawable.scissors);
 
-                            switch(computerOption)
-                            {
+                            //Determines scoring
+                            switch (computerOption) {
                                 case 1:
                                     computerCard.setImageResource(R.drawable.paper);
                                     playerNum += 1;
@@ -232,15 +240,15 @@ public class RockPaperScissors extends AppCompatActivity {
             }
         };
 
+        //If Rock is selected
         rockButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lockOption = true;
+                lockOption = true; //Lock sensors
                 playerOption = 2;
                 computerOption = createRandomNumber();
                 playerCard.setImageResource(R.drawable.rock);
-                switch(computerOption)
-                {
+                switch (computerOption) {
                     case 1:
                         computerCard.setImageResource(R.drawable.paper);
                         playerWin = 2;
@@ -274,8 +282,7 @@ public class RockPaperScissors extends AppCompatActivity {
                 computerOption = createRandomNumber();
                 playerCard.setImageResource(R.drawable.paper);
 
-                switch(computerOption)
-                {
+                switch (computerOption) {
                     case 1:
                         computerCard.setImageResource(R.drawable.paper);
                         Toast.makeText(getApplicationContext(), "TIE", Toast.LENGTH_LONG).show();
@@ -305,8 +312,7 @@ public class RockPaperScissors extends AppCompatActivity {
                 computerOption = createRandomNumber();
                 playerCard.setImageResource(R.drawable.scissors);
 
-                switch(computerOption)
-                {
+                switch (computerOption) {
                     case 1:
                         computerCard.setImageResource(R.drawable.paper);
                         playerNum += 1;
@@ -328,15 +334,16 @@ public class RockPaperScissors extends AppCompatActivity {
         });
     }
 
-
+    //When returning to activity resume sensor activity
     @Override
     protected void onResume() {
         super.onResume();
-        mSensorManager.registerListener(lightEventListener, lightSensor, 1000000, 1000000);
-        mSensorManager.registerListener(shakeEventListener, shakeSensor, 1000000, 1000000);
-        mSensorManager.registerListener(flipEventListener, flipSensor, 1000000, 1000000);
+        mSensorManager.registerListener(lightEventListener, lightSensor, 100000000, 100000000);
+        mSensorManager.registerListener(shakeEventListener, shakeSensor, 100000000, 100000000);
+        mSensorManager.registerListener(flipEventListener, flipSensor, 100000000, 100000000);
     }
 
+    //When the activity is paused turn of sensors
     @Override
     protected void onPause() {
         super.onPause();
@@ -350,8 +357,9 @@ public class RockPaperScissors extends AppCompatActivity {
         return random;
     }
 
-    public void createPause()
-    {
+    /*The lines below are used to try to make the banners appear and disappear,
+            unfortunately there is an issue with the view in the sensor, so the images wont reappear*/
+    public void createPause() {
         pauseHandle.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -360,15 +368,11 @@ public class RockPaperScissors extends AppCompatActivity {
         }, 4000);
     }
 
-    public void checkWin(int winNum)
-    {
+    public void checkWin(int winNum) {
         Activity act = this;
-        if(winNum == 0)
-        {
+        if (winNum == 0) {
             Toast.makeText(getApplicationContext(), "TIE", Toast.LENGTH_LONG).show();
-        }
-        else if(winNum == 1)
-        {
+        } else if (winNum == 1) {
             act.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -378,9 +382,7 @@ public class RockPaperScissors extends AppCompatActivity {
                     playerWin = 0;
                 }
             });
-        }
-        else
-        {
+        } else {
             act.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -393,8 +395,7 @@ public class RockPaperScissors extends AppCompatActivity {
         }
     }
 
-    public void resetOption()
-    {
+    public void resetOption() {
         playerOption = 0;
         computerOption = 0;
     }

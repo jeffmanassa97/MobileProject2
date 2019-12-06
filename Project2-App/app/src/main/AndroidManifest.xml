@@ -11,7 +11,6 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".War"></activity>
-        <activity android:name=".RockPaperScissors" />
 
         <activity android:name=".HowToPlayYahtzee"></activity>
         <activity android:name=".HowToPlayWar" />
@@ -19,6 +18,15 @@
         <activity android:name=".HowToPlayRPS" />
         <activity android:name=".HowToPlayERS" />
         <activity android:name=".SelectGameActivity" />
+        <activity android:name=".SlapActivity"/>
+        <activity android:name=".PickNumberOfNames">
+        </activity>
+        <activity android:name=".SetNames">
+        </activity>
+        <activity android:name=".YahtzeeActivity"></activity>
+        <activity android:name=".RockPaperScissors"></activity>
+        <activity android:name=".SpoonsGame"></activity>
+
 
         <activity android:name=".MainActivity">
             <intent-filter>

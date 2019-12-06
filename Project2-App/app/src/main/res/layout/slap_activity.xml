@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SlapActivity" >
+
+    <TextView
+        android:id="@+id/numPrizeCards2"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="543dp"
+        android:text="0/52"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/yourdeck"
+        android:layout_width="99dp"
+        android:layout_height="154dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginBottom="43dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/blueback" />
+
+    <ImageButton
+        android:id="@+id/opponentdeck"
+        android:layout_width="97dp"
+        android:layout_height="164dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp"
+        android:layout_marginBottom="446dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/redback" />
+
+    <ImageButton
+        android:id="@+id/slapdeck"
+        android:layout_width="143dp"
+        android:layout_height="212dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="218dp"
+        android:background="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/grayback" />
+
+    <TextView
+        android:id="@+id/numPrizeCards"
+        android:layout_width="104dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="103dp"
+        android:text="0/52"
+        android:textSize="30sp" />
+
+</RelativeLayout>

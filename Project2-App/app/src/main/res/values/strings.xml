@@ -12,7 +12,7 @@
     <string name="Spoons">Spoons</string>
     <string name="RPS">Rock-Paper-Scissors</string>
 
-    <string name="CurrentTopScore">Current Top Score: </string>
+    <string name="CurrentTopScore">Current Top Score: 50</string>
 
     <string name="PlayWar">Play War</string>
     <string name="PlayYahtzee">Play Yahtzee</string>
@@ -38,7 +38,7 @@
     <string name="HTP_TheDeal">THE DEAL:</string>
     <string name="HTP_ThePlay">THE PLAY:</string>
     <string name="HTP_TheScore">HOW TO KEEP SCORE:</string>
-    
+
     <!-- __________________________ -->
     <!-- RULES OF EGYPTIAN RAT SLAP -->
     <!-- __________________________ -->
@@ -80,7 +80,7 @@
     <!-- ____________________________ -->
     <!-- RULES OF ROCK PAPER SCISSORS -->
     <!-- ____________________________ -->
-    
+
     <string name="HTP_Shapes">What are the shapes of Rock Paper Scissors?</string>
     <string name="HTP_ShapeRock">Rock</string>
     <string name="HTP_ShapeRockDesc">The rock is when you place your hand into a form of a simple
@@ -89,14 +89,14 @@
     <string name="HTP_ShapePaperDesc">The paper is when you place your hand in an outstretched
         position.</string>
     <string name="HTP_ShapeScissors">Scissors</string>
-    <string name="HTP_ShapeScissorsDssc">This is when you hold your fist with your index and middle 
+    <string name="HTP_ShapeScissorsDssc">This is when you hold your fist with your index and middle
         finger pointing outwards in a V shape.</string>
     <string name="HTP_Why">Why is Rock Paper Scissor Played?</string>
-    <string name="HTP_WhyDesc">This game is played by children and adults and is popular all over 
-        the world. Apart from being a game played to pass time, the game is usually played in 
-        situations where something has to be chosen. It is similar in that way to other games like 
-        flipping the coin, throwing dice or drawing straws. There is no room for cheating or for 
-        knowing what the other person is going to do so the results are usually very satisfying with 
+    <string name="HTP_WhyDesc">This game is played by children and adults and is popular all over
+        the world. Apart from being a game played to pass time, the game is usually played in
+        situations where something has to be chosen. It is similar in that way to other games like
+        flipping the coin, throwing dice or drawing straws. There is no room for cheating or for
+        knowing what the other person is going to do so the results are usually very satisfying with
         no room for fighting or error.</string>
     <string name="HTP_Rules">What are the rules of RPS?</string>
     <string name="HTP_RulesDesc">Although the game has a lot of complexity to it, the rules to play
@@ -158,30 +158,30 @@
     <!--     RULES OF SPOONS        -->
     <!-- __________________________ -->
 
-    <string name="HTPS_PackDesc">A standard deck of 52 cards is used plus a number of spoons using 
+    <string name="HTPS_PackDesc">A standard deck of 52 cards is used plus a number of spoons using
         one fewer spoon than the number of players playing in the game</string>
     <string name="HTPS_Object">OBJECT OF THE GAME:</string>
-    <string name="HTPS_ObjectDesc">Players take turns trying to collect a four-of-a-kind. Once 
-        someone does, everyone tries to grab a spoon. Without a spoon, you get a letter. If a 
+    <string name="HTPS_ObjectDesc">Players take turns trying to collect a four-of-a-kind. Once
+        someone does, everyone tries to grab a spoon. Without a spoon, you get a letter. If a
         player spells “S-P-O-O-N”, they’re out! The last player standing wins!</string>
-    <string name="HTPS_DealDesc">Arrange the spoons in a small circle in the center of the table 
+    <string name="HTPS_DealDesc">Arrange the spoons in a small circle in the center of the table
         and deal four cards to each player.</string>
-    <string name="HTPS_PlayDesc">Each player tries to make four of a kind. The dealer takes a card 
-        off the top of the deck to have five cards in their hand, removes one and passes it face 
-        down to the left. Each player discards to the person on their left. The last player places 
-        their discard into a trash pile. Cards are picked up and passed quickly around the table 
-        until someone gets four of a kind and takes a spoon from the center. Once the player with 
-        four of a kind takes a spoon, anyone can take a spoon. The player left without a spoon gets 
-        a letter. If at any time the draw cards run out, pause to reshuffle the trash pile and keep 
+    <string name="HTPS_PlayDesc">Each player tries to make four of a kind. The dealer takes a card
+        off the top of the deck to have five cards in their hand, removes one and passes it face
+        down to the left. Each player discards to the person on their left. The last player places
+        their discard into a trash pile. Cards are picked up and passed quickly around the table
+        until someone gets four of a kind and takes a spoon from the center. Once the player with
+        four of a kind takes a spoon, anyone can take a spoon. The player left without a spoon gets
+        a letter. If at any time the draw cards run out, pause to reshuffle the trash pile and keep
         going.</string>
-    <string name="HTPS_ScoreDesc">The winner is the last player remaining. Players move closer to 
-        elimination each time they don’t get a spoon and take the next letter in the word S-P-O-O-N. 
+    <string name="HTPS_ScoreDesc">The winner is the last player remaining. Players move closer to
+        elimination each time they don’t get a spoon and take the next letter in the word S-P-O-O-N.
         Spell it and you’re out.</string>
 
     <!-- __________________________ -->
     <!--    RULES OF YAHTZEE        -->
     <!-- __________________________ -->
-    
+
     <string name="HTPY_Standard">Standard Play:</string>
     <string name="HTPY_Objective">Objective of the Game:</string>
     <string name="HTPY_ObjDesc">The object of Yahtzee is to obtain the highest score from throwing
@@ -247,5 +247,22 @@
         This could be used near the end of a game to lose a poor roll against a difficult-to-get
         category that you have failed to fill (eg, long straight or yahtzee).</string>
     <string name="War_Instructions">Flip phone face down or tap the deal button to flip the cards.</string>
-    
+    <string-array name="category">
+        <item>Choose a category!</item>
+        <item>Ones</item>
+        <item>Twos</item>
+        <item>Threes</item>
+        <item>Fours</item>
+        <item>Fives</item>
+        <item>Sixes</item>
+        <item>3 of a kind</item>
+        <item>4 of a kind</item>
+        <item>Full House</item>
+        <item>Sm. Straight</item>
+        <item>Lg. Straight</item>
+        <item>Yahtzee</item>
+        <item>Chance</item>
+        <item>Cross Out Category</item>
+    </string-array>
+
 </resources>

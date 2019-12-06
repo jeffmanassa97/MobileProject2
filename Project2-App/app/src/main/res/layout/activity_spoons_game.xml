@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpoonsGame"
+    android:background="@drawable/grenn_background">
+
+    <ImageView
+        android:id="@+id/op1card1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/red_card" />
+
+    <ImageView
+        android:id="@+id/op1card2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-60dp"
+        android:layout_toRightOf="@id/op1card1"
+        android:background="@drawable/red_card" />
+
+    <ImageView
+        android:id="@+id/op1card3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-60dp"
+        android:layout_toRightOf="@id/op1card2"
+        android:background="@drawable/red_card" />
+
+    <ImageView
+        android:id="@+id/op1card4"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="-60dp"
+        android:layout_toRightOf="@id/op1card3"
+        android:background="@drawable/red_card" />
+
+    <ImageView
+        android:id="@+id/op2card1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op1card1"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op2card2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op2card1"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op2card3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op2card2"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op2card4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op2card3"
+        android:layout_marginStart="-60dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op3card1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op1card4"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-60dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op3card2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op3card1"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-60dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op3card3"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op3card2"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-60dp"
+        android:background="@drawable/red_card_onside" />
+
+    <ImageView
+        android:id="@+id/op3card4"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/op3card3"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-60dp"
+        android:background="@drawable/red_card_onside" />
+
+    <Button
+        android:id="@+id/spoon1"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="128dp"
+        android:background="@drawable/spoon_picture" />
+
+    <Button
+        android:id="@+id/spoon2"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="102dp"
+        android:background="@drawable/spoon_picture" />
+
+    <Button
+        android:id="@+id/spoon3"
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginBottom="331dp"
+        android:background="@drawable/spoon_picture" />
+
+    <RadioGroup
+        android:id="@+id/playersHand"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/hand1"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:button="@drawable/blank_card" />
+
+            <RadioButton
+                android:id="@+id/hand2"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:button="@drawable/blank_card" />
+
+            <RadioButton
+                android:id="@+id/hand3"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:button="@drawable/blank_card" />
+
+            <RadioButton
+                android:id="@+id/hand4"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:button="@drawable/blank_card" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/card1facevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="F"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/card2facevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="F"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/card3facevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="F"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/card4facevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="F"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/card1club"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/club" />
+
+    <ImageView
+        android:id="@+id/card2club"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/club" />
+
+    <ImageView
+        android:id="@+id/card3club"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/club" />
+
+    <ImageView
+        android:id="@+id/card4club"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/club" />
+
+    <ImageView
+        android:id="@+id/card1diamond"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="92dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageView
+        android:id="@+id/card2diamond"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageView
+        android:id="@+id/card4diamond"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageView
+        android:id="@+id/card3diamond"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageView
+        android:id="@+id/card1heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="94dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/card2heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/card3heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/card4heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="94dp"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/card1spade"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="86dp"
+        app:srcCompat="@drawable/spade" />
+
+    <ImageView
+        android:id="@+id/card2spade"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="86dp"
+        app:srcCompat="@drawable/spade" />
+
+    <ImageView
+        android:id="@+id/card3spade"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="84dp"
+        app:srcCompat="@drawable/spade" />
+
+    <ImageView
+        android:id="@+id/card4spade"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="86dp"
+        app:srcCompat="@drawable/spade" />
+
+    <RadioButton
+        android:id="@+id/radioButton13"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:button="@drawable/blank_card" />
+
+    <ImageView
+        android:id="@+id/nextcardspade"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        app:srcCompat="@drawable/spade" />
+
+    <ImageView
+        android:id="@+id/nextcardheart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        app:srcCompat="@drawable/heart" />
+
+    <ImageView
+        android:id="@+id/nextcarddiamond"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="240dp"
+        app:srcCompat="@drawable/diamond" />
+
+    <ImageView
+        android:id="@+id/nextcardclub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="250dp"
+        app:srcCompat="@drawable/club" />
+
+    <TextView
+        android:id="@+id/nextcardFaceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp"
+        android:text="F"
+        android:textColor="@android:color/black"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
